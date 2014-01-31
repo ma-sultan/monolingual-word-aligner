@@ -1,4 +1,4 @@
-# A Monolingual Word Aligner (for English)
+# A Word Aligner for English
 
 This is a word aligner for English: given two English sentences, it aligns related words in the two sentences. It exploits the semantic and contextual similarities of the words to make alignment decisions.
 
