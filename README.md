@@ -9,10 +9,10 @@ b. The [Python wrapper for Stanford CoreNLP](https://github.com/dasmith/stanford
 ## Installation and Usage
 a. Install the above tools.  
 b. Download the aligner:  
-      git clone https://github.com/ma-sultan/English-Word-Aligner.git  
+	  git clone https://github.com/ma-sultan/English-Word-Aligner.git  
 c. Change line 100 of corenlp.py:  
-      from "rel, left, right = map(lambda x: remove_id(x), split_entry)"  
-      to "rel, left, right = map(lambda x: x, split_entry)".  
+	  from "rel, left, right = map(lambda x: remove_id(x), split_entry)"  
+	  to "rel, left, right = map(lambda x: x, split_entry)".  
 d. Run the corenlp.py script to launch the server:  
-      python corenlp.py  
+	  python corenlp.py  
 e. To see the aligner in action, run **testAlign.py**. (Word indexing starts at 1.)
