@@ -17,4 +17,4 @@ This is a word aligner for English: given two English sentences, it aligns relat
 4) Run the corenlp.py script to launch the server:  
 
 	  python corenlp.py  
-5) To see the aligner in action, run **testAlign.py**. (Word indexing starts at 1.)
+5) To view the aligner in action, run **testAlign.py**. (Word indexing starts at 1.)
