@@ -10,11 +10,15 @@ This is a word aligner for English: given two English sentences, it aligns relat
 ## Installation and Usage
 
 1) Install the above tools.  
-2) Download the aligner:  
+2) Change line 100 of corenlp.py, from "rel, left, right = map(lambda x: remove_id(x), split_entry)" to "rel, left, right = map(lambda x: x, split_entry)".  
+3) Download the NLTK stopword corpus using nltk.download().
+4) Install jsonrpclib:  
+
+	sudo pip install jsonrpclib
+5) Download the aligner:  
 
 	  git clone https://github.com/ma-sultan/monolingual-word-aligner.git  
-3) Change line 100 of corenlp.py, from "rel, left, right = map(lambda x: remove_id(x), split_entry)" to "rel, left, right = map(lambda x: x, split_entry)".  
-4) Run the corenlp.py script to launch the server:  
+6) Run the corenlp.py script to launch the server:  
 
 	  python corenlp.py  
-5) To view the aligner in action, run **testAlign.py**. (Word indexing starts at 1.)
+7) To view the aligner in action, run **testAlign.py**. (Word indexing starts at 1.)

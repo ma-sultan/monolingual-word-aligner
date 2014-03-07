@@ -1530,10 +1530,6 @@ def alignWords(source, target, sourceParseResult, targetParseResult):
 
 
 
-
-
-
-
 ##############################################################################################################################
 def align(sentence1, sentence2):
 
@@ -1564,13 +1560,9 @@ def align(sentence1, sentence2):
 
 
     myWordAlignments = alignWords(sentence1LemmasAndPosTags, sentence2LemmasAndPosTags, sentence1ParseResult, sentence2ParseResult)
+    myWordAlignmentTokens = [[str(sentence1Lemmatized[item[0]-1][2]), str(sentence2Lemmatized[item[1]-1][2])] for item in myWordAlignments]
 
-    return myWordAlignments
 
-    
+    return [myWordAlignments, myWordAlignmentTokens]
 ##############################################################################################################################
-
-
-
-
 
