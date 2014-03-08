@@ -1,7 +1,7 @@
 from aligner import *
 
-sentence1 = "Four men died of an accident."
-sentence2 = "4 people was dead from a collision."
+sentence1 = "Four men died in an accident."
+sentence2 = "4 people are dead from a collision."
 
 alignments = align(sentence1, sentence2)
 
