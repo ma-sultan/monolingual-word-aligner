@@ -10,8 +10,10 @@ This is a word aligner for English: given two English sentences, it aligns relat
 ## Installation and Usage
 
 1) Install the above tools.  
-2) Change line 100 of corenlp.py, from "rel, left, right = map(lambda x: remove_id(x), split_entry)" to "rel, left, right = map(lambda x: x, split_entry)".  
-3) Download the NLTK stopword corpus using nltk.download().  
+2) Change line 100 of corenlp.py, from "rel, left, right = map(lambda x: remove_id(x), split_entry)" to "rel, left, right = split_entry".  
+3) Download the NLTK stopword corpus:  
+
+	python -m nltk.downloader stopwords
 4) Install jsonrpclib:  
 
 	sudo pip install jsonrpclib
